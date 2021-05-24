@@ -1,294 +1,51 @@
 Using pre-set license
 Built from '2021.1/staging' branch; Version is '2021.1.7f1 (d91830b65d9b) revision 14227504'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Pro; OS build 19041.985; Version 2004; 64bit' Language: 'pt' Physical Memory: 8140 MB
+OS: 'Windows 10 Home Single Language; OS build 19041.985; Version 2004; 64bit' Language: 'pt' Physical Memory: 8068 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity 2021.1.7f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2021.1.7f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-C:/dev/Jogo/Jogo
+C:/Users/igorg/fc/ProjetoUC-ComputacaoGrafica
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-55043
-Successfully changed project path to: C:/dev/Jogo/Jogo
-C:/dev/Jogo/Jogo
+10443
+Successfully changed project path to: C:/Users/igorg/fc/ProjetoUC-ComputacaoGrafica
+C:/Users/igorg/fc/ProjetoUC-ComputacaoGrafica
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 144.52 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 488.24 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.7f1 (d91830b65d9b)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity 2021.1.7f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/dev/Jogo/Jogo/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.7f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/igorg/fc/ProjetoUC-ComputacaoGrafica/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
-    Version:  Direct3D 11.0 [level 10.0]
-    Renderer: NVIDIA GeForce 8400 GS     (ID=0x6e4)
-    Vendor:   NVIDIA
-    VRAM:     480 MB
-    Driver:   21.21.13.4201
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) UHD Graphics 620 (ID=0x3ea0)
+    Vendor:   Intel
+    VRAM:     4034 MB
+    Driver:   27.20.100.8935
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity 2021.1.7f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity 2021.1.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'C:/Program Files/Unity 2021.1.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56632
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.7f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.7f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56196
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity 2021.1.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002682 seconds.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.008182 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 132.56 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 324.32 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.779 seconds
+- Completed reload, in 14.845 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.014399 seconds.
+Registered in 0.080634 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\dev\Jogo\Jogo\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\dev\Jogo\Jogo\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 139.19 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Refreshing native plugins compatible for Editor in 1.10 ms, found 2 plugins.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.909 seconds
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.30 seconds
-Refreshing native plugins compatible for Editor in 0.99 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4014 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 214.1 MB.
-System memory in use after: 214.1 MB.
-
-Unloading 159 unused Assets to reduce memory usage. Loaded Objects now: 4473.
-Total: 4.913700 ms (FindLiveObjects: 0.580700 ms CreateObjectMapping: 0.172700 ms MarkObjects: 3.710100 ms  DeleteObjects: 0.448300 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Terreno/Mustang.blend
-  artifactKey: Guid(c2f39a1ea2988304fae6a0ec3d489da8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terreno/Mustang.blend using Guid(c2f39a1ea2988304fae6a0ec3d489da8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90d9545220db82da261d8c4d8d28adac') in 1.905855 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.629484 seconds.
-  path: Assets/Course Library/_Source_Files/Materials/PolygonNature_MountainSkybox_Snow.mat
-  artifactKey: Guid(fb87686c53fbcc24a867e24f6b622498) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/_Source_Files/Materials/PolygonNature_MountainSkybox_Snow.mat using Guid(fb87686c53fbcc24a867e24f6b622498) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32ef83c8777c1fe6a89e8462482877cf') in 0.199896 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.820748 seconds.
-  path: Assets/Course Library/_Source_Files/Materials/SimpleSky.mat
-  artifactKey: Guid(e68f77e240a7f8643b5cc4253dc37516) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/_Source_Files/Materials/SimpleSky.mat using Guid(e68f77e240a7f8643b5cc4253dc37516) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b3ef5d67acd4168553a04e2c7a9b789') in 0.032692 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 35.626218 seconds.
-  path: Assets/Terreno/Mustang.blend
-  artifactKey: Guid(c2f39a1ea2988304fae6a0ec3d489da8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terreno/Mustang.blend using Guid(c2f39a1ea2988304fae6a0ec3d489da8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ece8f71fb52a2b0fadae4c2ef90cb100') in 1.959419 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 35.511846 seconds.
-  path: Assets/Terreno/Mustang.blend
-  artifactKey: Guid(c2f39a1ea2988304fae6a0ec3d489da8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terreno/Mustang.blend using Guid(c2f39a1ea2988304fae6a0ec3d489da8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '903bbf18f0547c8920a5924834e81988') in 1.706941 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 292.311817 seconds.
-  path: Assets/Terreno/fixed.blend
-  artifactKey: Guid(3ce1aa9f0f21f5b4eb676ad8f446cc70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terreno/fixed.blend using Guid(3ce1aa9f0f21f5b4eb676ad8f446cc70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20eb15562a270ca6b04e6b573c89a4f3') in 0.330257 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 177.188458 seconds.
-  path: Assets/Terreno/CatarinaCorreia_transporte.gltf
-  artifactKey: Guid(b7ff20de65ed8c8438f8ade044ecd80b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terreno/CatarinaCorreia_transporte.gltf using Guid(b7ff20de65ed8c8438f8ade044ecd80b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bdf7ba4797d41bb1a0e46a6f0d647cb') in 0.054471 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 420.420580 seconds.
-  path: Assets/Low Poly Cars (Free)
-  artifactKey: Guid(722fe7206204b9f46a7e297304408ff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Cars (Free) using Guid(722fe7206204b9f46a7e297304408ff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '463cd25b366f8697c25b3b2d3510c124') in 0.003953 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.910053 seconds.
-  path: Assets/Low Poly Cars (Free)/Demo Scene.unity
-  artifactKey: Guid(39cd66ce3699d5d449430093b8ad7aa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Cars (Free)/Demo Scene.unity using Guid(39cd66ce3699d5d449430093b8ad7aa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '986df96d9533972cd5082866a1384c71') in 0.004970 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 14.999675 seconds.
-  path: Assets/Low Poly Cars (Free)/Models
-  artifactKey: Guid(112eed812522af54c8d690e0a69bb447) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Cars (Free)/Models using Guid(112eed812522af54c8d690e0a69bb447) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39ba6368b9dd85b13cb0d42a18ed8d20') in 0.004367 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 27.081975 seconds.
-  path: Assets/Low Poly Cars (Free)/Textures/Car Texture 1.png
-  artifactKey: Guid(fab40526332a73a4cbe13413bb8bf816) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Cars (Free)/Textures/Car Texture 1.png using Guid(fab40526332a73a4cbe13413bb8bf816) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62cbe770f044c4b665f8a26c9f11f4ae') in 0.141446 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.880902 seconds.
-  path: Assets/Low Poly Cars (Free)/Textures/Car Texture 2.png
-  artifactKey: Guid(bcbb379dff0a1714fa099dc2e5682fb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Cars (Free)/Textures/Car Texture 2.png using Guid(bcbb379dff0a1714fa099dc2e5682fb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '022cc1733b7a24f2deba5844fb3fef55') in 0.173760 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 58.080834 seconds.
-  path: Assets/Low Poly Cars (Free)/Models/car_2.fbx
-  artifactKey: Guid(9d4d51851e8b8a242a17bc3291c028fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Cars (Free)/Models/car_2.fbx using Guid(9d4d51851e8b8a242a17bc3291c028fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58be730c77ece76b18966d79d1fdcbb7') in 0.301838 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 319.120068 seconds.
-  path: Assets/Low Poly Cars (Free)/Materials/Car Material 1.mat
-  artifactKey: Guid(169a223c9591cdf43b16775e4ff1b888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Cars (Free)/Materials/Car Material 1.mat using Guid(169a223c9591cdf43b16775e4ff1b888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c99f3767233db6404b5d58cc35da1be') in 0.113669 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000304 seconds.
-  path: Assets/Low Poly Cars (Free)/Materials/Car Material 2.mat
-  artifactKey: Guid(089910b14991488489cf4be65a35ddec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Cars (Free)/Materials/Car Material 2.mat using Guid(089910b14991488489cf4be65a35ddec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02ff43bfb006ac29df08dc7334c09d48') in 0.095224 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000448 seconds.
-  path: Assets/Low Poly Cars (Free)/Materials/Floor Material.mat
-  artifactKey: Guid(e6a25ebefd3c36d4caf68270bad19412) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Cars (Free)/Materials/Floor Material.mat using Guid(e6a25ebefd3c36d4caf68270bad19412) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bcdcc3b873571bcc9d11b16dea4105a') in 0.014004 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 163.749415 seconds.
-  path: Assets/Low Poly Cars (Free)/Models/car_1.fbx
-  artifactKey: Guid(35c6246c59f16b440aaa2c34bfbbcc64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Cars (Free)/Models/car_1.fbx using Guid(35c6246c59f16b440aaa2c34bfbbcc64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5ee7b7f2f692c53f8613f77bc379675') in 0.259359 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000344 seconds.
-  path: Assets/Course Library/_Source_Files/Misc/SkyDome.fbx
-  artifactKey: Guid(1340630fb7a3267499177be33f281f05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/_Source_Files/Misc/SkyDome.fbx using Guid(1340630fb7a3267499177be33f281f05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6de4d484320617f621d9a51cc5d2f563') in 0.143662 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000309 seconds.
-  path: Assets/Course Library/_Source_Files/FBX/Prop_Barrier02.fbx
-  artifactKey: Guid(78056cefff7010745ae502ceee2d13e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/_Source_Files/FBX/Prop_Barrier02.fbx using Guid(78056cefff7010745ae502ceee2d13e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5975a66d5e6eee72641e99f3b86a91b') in 0.076917 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000406 seconds.
-  path: Assets/Course Library/_Source_Files/Misc/MountainSkybox.fbx
-  artifactKey: Guid(2d340581e3fa79c48b1401265c761387) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/_Source_Files/Misc/MountainSkybox.fbx using Guid(2d340581e3fa79c48b1401265c761387) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a974f38ffdfbb7d5f8fe04896e47864b') in 0.043448 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000425 seconds.
-  path: Assets/Course Library/_Source_Files/FBX/Prop_Barrier01.fbx
-  artifactKey: Guid(5bb9a811cdd73fa42975794b4c22350f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/_Source_Files/FBX/Prop_Barrier01.fbx using Guid(5bb9a811cdd73fa42975794b4c22350f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78ff3581a9a0b9f2a8c1b50aa2847314') in 0.111122 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000319 seconds.
-  path: Assets/Course Library/_Source_Files/FBX/SK_Veh_Armor_Car_01.fbx
-  artifactKey: Guid(93b9de2c4710d6b4e9ac38987a064d42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/_Source_Files/FBX/SK_Veh_Armor_Car_01.fbx using Guid(93b9de2c4710d6b4e9ac38987a064d42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e48664de1e64124750e3a1c752af318d') in 0.279223 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000299 seconds.
-  path: Assets/Course Library/_Source_Files/FBX/road_straight_mesh.fbx
-  artifactKey: Guid(9054c70a5c9ed454f8ef48a11963db28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/_Source_Files/FBX/road_straight_mesh.fbx using Guid(9054c70a5c9ed454f8ef48a11963db28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bed597df2daba5d6703a0315b255b14e') in 0.020591 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.144621 seconds.
-  path: Assets/Course Library/_Source_Files/FBX/SM_Prop_Barrel_02.fbx
-  artifactKey: Guid(bc0208005b6890d44994050c677eb13f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/_Source_Files/FBX/SM_Prop_Barrel_02.fbx using Guid(bc0208005b6890d44994050c677eb13f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc304cb7054defd5eeafc83da99cbaa5') in 0.020216 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.796665 seconds.
-  path: Assets/Course Library/_Source_Files/FBX/SM_Prop_Crate_01.fbx
-  artifactKey: Guid(6a1c3c31ad20ee24c837e6aad1e22d80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/_Source_Files/FBX/SM_Prop_Crate_01.fbx using Guid(6a1c3c31ad20ee24c837e6aad1e22d80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fae3d6d852f24262dadc32425a45ff65') in 0.023990 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000388 seconds.
-  path: Assets/Course Library/_Source_Files/FBX/SM_Prop_Spool_02.fbx
-  artifactKey: Guid(0398a1d1d554d19429b04a7c7413037a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/_Source_Files/FBX/SM_Prop_Spool_02.fbx using Guid(0398a1d1d554d19429b04a7c7413037a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd528c0a189be8262acbe679df41139be') in 0.023319 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.993001 seconds.
-  path: Assets/Course Library/_Source_Files/FBX/SM_Rock_Boulder_01.fbx
-  artifactKey: Guid(3bf1797a1e906ed419074e5bd4b7ff3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/_Source_Files/FBX/SM_Rock_Boulder_01.fbx using Guid(3bf1797a1e906ed419074e5bd4b7ff3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '018e8f5399abb49f7d2d26a73732d0dd') in 0.025481 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000312 seconds.
-  path: Assets/Course Library/_Source_Files/FBX/ST_Veh_Bus_Blue_Z.fbx
-  artifactKey: Guid(7799a29fdee308341b16b65d8a002357) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/_Source_Files/FBX/ST_Veh_Bus_Blue_Z.fbx using Guid(7799a29fdee308341b16b65d8a002357) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cc794d3fa9ca6c972a49f78610f9030') in 0.385244 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000385 seconds.
-  path: Assets/Course Library/_Source_Files/FBX/ST_Veh_Ute_Red_Z.fbx
-  artifactKey: Guid(a7dca03bf1b6f9b46b6916fa5450f775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/_Source_Files/FBX/ST_Veh_Ute_Red_Z.fbx using Guid(a7dca03bf1b6f9b46b6916fa5450f775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f6f85717178bc036fffe043a67f963e') in 0.175330 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000298 seconds.
-  path: Assets/Course Library/_Source_Files/FBX/ST_Veh_Car_Blue_Z.fbx
-  artifactKey: Guid(6df34ee591500634282ce8431bcb6976) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/_Source_Files/FBX/ST_Veh_Car_Blue_Z.fbx using Guid(6df34ee591500634282ce8431bcb6976) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df62b818dd31f4f585d94f66368fb8ec') in 0.305099 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000343 seconds.
-  path: Assets/Course Library/_Source_Files/FBX/ST_Veh_Van_Green_Z.fbx
-  artifactKey: Guid(576da546347c040428bb0204a37e73d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/_Source_Files/FBX/ST_Veh_Van_Green_Z.fbx using Guid(576da546347c040428bb0204a37e73d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3787f4b2e4e3319527ca3334e04cecca') in 0.261617 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 181.852557 seconds.
-  path: Assets/Course Library/_Source_Files/Textures/PolygonNature_01.png
-  artifactKey: Guid(2edd58f7c433e934db9029c375173b44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/_Source_Files/Textures/PolygonNature_01.png using Guid(2edd58f7c433e934db9029c375173b44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33d5a0883976406beeadc1174c091ace') in 0.019871 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000363 seconds.
-  path: Assets/Course Library/_Source_Files/Textures/SimpleSky.png
-  artifactKey: Guid(7bab9ac1487e10c40b9ed77d4c551e04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/_Source_Files/Textures/SimpleSky.png using Guid(7bab9ac1487e10c40b9ed77d4c551e04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f6deffd6b391cf6e94d7d3c2b55daa5') in 0.014478 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000363 seconds.
-  path: Assets/Course Library/_Source_Files/Textures/Skybox_Diff.png
-  artifactKey: Guid(1202e6a7c7a1de2499a2c339a4382c9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/_Source_Files/Textures/Skybox_Diff.png using Guid(1202e6a7c7a1de2499a2c339a4382c9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8651480209c41d59e1b99fffd09c746c') in 0.144252 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000404 seconds.
-  path: Assets/Course Library/_Source_Files/Textures/Road.png
-  artifactKey: Guid(d88827958731d474899fb1e4219416c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/_Source_Files/Textures/Road.png using Guid(d88827958731d474899fb1e4219416c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ba0e2b8764e4c62e2953b83f3aaa5c5') in 0.120228 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000316 seconds.
-  path: Assets/Course Library/_Source_Files/Textures/Signs_00.png
-  artifactKey: Guid(c050c2762aa6b874bac5c0b0c224bc9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/_Source_Files/Textures/Signs_00.png using Guid(c050c2762aa6b874bac5c0b0c224bc9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffa47cf4da15a316fa0b6ba2d50b3168') in 0.089210 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000447 seconds.
-  path: Assets/Course Library/_Source_Files/Textures/SimpleTown.png
-  artifactKey: Guid(6495ebfa6e1229c4581a3963c2c50f9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Course Library/_Source_Files/Textures/SimpleTown.png using Guid(6495ebfa6e1229c4581a3963c2c50f9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa4dd72926fde80aeda53164ba832508') in 0.022065 seconds 
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file

@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour
     private float verticalInput;
     private float horizontalInput;
 
+    //public GameObject vidas;
+    public int qtdVidas;
 
     // Update is called once per frame
     void Update()
