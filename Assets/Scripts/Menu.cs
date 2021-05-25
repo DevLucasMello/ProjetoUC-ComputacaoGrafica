@@ -9,10 +9,14 @@ public class Menu : MonoBehaviour{
     public Text cronometro;
     public GameObject[] BotoesMenu;
 
+    public int qtdVida = 10;
+    public Slider vidaSlider;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        vidaSlider.value = qtdVida;
+
     }
 
     public void AtualizaCronometro(int segundos)
@@ -34,7 +38,6 @@ public class Menu : MonoBehaviour{
     {
         Application.Quit();
     }
-
     public void AtivarMenus(bool ativar) {
 
         for (int i = 0; i < BotoesMenu.Length; i++)
@@ -45,4 +48,18 @@ public class Menu : MonoBehaviour{
 
 
     }
+
+    public void Dano()
+    {
+        vidaSlider.value -= 3;
+    }
+
+    public void Vida() {
+        vidaSlider.value += 3;
+    }
+
+    //public VidaController vida
+    //vida.Dano();
+
+
 }

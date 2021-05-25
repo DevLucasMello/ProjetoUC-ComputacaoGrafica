@@ -15,6 +15,7 @@ public class Obstacle : MonoBehaviour
     int localAtual = 0;
     bool inverter = false;
     public int TiraVidas;
+   
 
     // Start is called before the first frame update
     void Start()
@@ -89,7 +90,9 @@ public class Obstacle : MonoBehaviour
             
             if (carro.qtdVidas > 0)
             {
+                
                 carro.qtdVidas--;
+                
             }
             else
             {
