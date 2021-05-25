@@ -12,7 +12,11 @@ public class PlayerController : MonoBehaviour
 
     //public GameObject vidas;
     public int qtdVidas;
+    void Start()
+    {
+        
 
+    }
     // Update is called once per frame
     void Update()
     {
@@ -23,7 +27,20 @@ public class PlayerController : MonoBehaviour
 
         if (Mathf.Abs(verticalInput) > 0) {
             transform.Rotate(Vector3.up, Time.deltaTime * turnSpeed * horizontalInput);
-        }        
+        }
 
+
+        if (Input.GetKey(KeyCode.LeftControl))
+        {
+            Time.timeScale = 0.4f;
+        }
+        /*
+        else
+        {
+            Time.timeScale = 1;
+        }*/
     }
+
+
+
 }

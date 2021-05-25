@@ -17,10 +17,8 @@ public class Vidas : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         transform.Rotate(0, rotacao * Time.deltaTime, 0);
-
-        
+   
     }
 
     public void OnCollisionEnter(Collision collision) {
