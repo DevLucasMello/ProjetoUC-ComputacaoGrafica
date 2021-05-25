@@ -34,11 +34,7 @@ public class PlayerController : MonoBehaviour
         {
             Time.timeScale = 0.4f;
         }
-        /*
-        else
-        {
-            Time.timeScale = 1;
-        }*/
+        
     }
 
 

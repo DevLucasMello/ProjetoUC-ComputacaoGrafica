@@ -2,16 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class configGeral : MonoBehaviour
 {
     public GameObject menu;
     static public bool estaPausado;
-
+    Menu menuInicial;
+    static public float tempoRestante;
     // Start is called before the first frame update
     void Start()
     {
         
         menu = Instantiate(menu, menu.transform.position, menu.transform.rotation) as GameObject;
+        tempoRestante = 30;
+        menuInicial = menu.GetComponent<Menu>();
         Pause(false);
     }
 
@@ -22,13 +26,22 @@ public class configGeral : MonoBehaviour
         {
             Pause(!estaPausado);
         }
+
+        tempoRestante -= Time.deltaTime;
+        if (tempoRestante<=0)
+        {
+            tempoRestante = 0;
+            Pause(true);
+
+        }
+        menuInicial.AtualizaCronometro((int)Mathf.Round(tempoRestante));
         
     }
 
     void Pause(bool statusPause)
     {
         estaPausado = statusPause;
-        menu.SetActive(estaPausado);
+        menuInicial.AtivarMenus(estaPausado);
 
         if (estaPausado)
         {
@@ -38,5 +51,7 @@ public class configGeral : MonoBehaviour
         {
             Time.timeScale = 1;
         }
+
+
     }
 }
