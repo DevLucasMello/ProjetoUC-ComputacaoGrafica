@@ -6,7 +6,7 @@ public class Vidas : MonoBehaviour
 
 {
     
-    public int Recarregavidas, rotacao;
+    public int rotacao;
 
 
     // Start is called before the first frame update
@@ -21,7 +21,7 @@ public class Vidas : MonoBehaviour
         transform.Rotate(0, rotacao * Time.deltaTime, 0);
    
     }
-
+    /*
     public void OnCollisionEnter(Collision collision) {
 
         PlayerController carro = collision.transform.GetComponent<PlayerController>();
@@ -33,5 +33,5 @@ public class Vidas : MonoBehaviour
             }
         }
     }
-
+    */
 }

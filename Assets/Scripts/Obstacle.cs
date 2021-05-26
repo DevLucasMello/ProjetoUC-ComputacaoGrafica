@@ -14,7 +14,7 @@ public class Obstacle : MonoBehaviour
 
     int localAtual = 0;
     bool inverter = false;
-    public int TiraVidas;
+    
    
 
     // Start is called before the first frame update
@@ -81,6 +81,7 @@ public class Obstacle : MonoBehaviour
         }
     }
 
+    /*
     public void OnCollisionEnter(Collision collision)
     {
 
@@ -102,5 +103,6 @@ public class Obstacle : MonoBehaviour
 
         }
     }
+    */
 }
 

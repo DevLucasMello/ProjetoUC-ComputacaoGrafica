@@ -10,16 +10,19 @@ public class PlayerController : MonoBehaviour
     private float verticalInput;
     private float horizontalInput;
 
+
+
     //public GameObject vidas;
+    //static public int qtdVidas;
     public int qtdVidas;
     void Start()
     {
-        
-
+        qtdVidas = 10;
     }
     // Update is called once per frame
     void Update()
     {
+        Menu.qtdVida = qtdVidas;
         verticalInput = Input.GetAxis("Vertical");
         horizontalInput = Input.GetAxis("Horizontal");
 
@@ -36,6 +39,32 @@ public class PlayerController : MonoBehaviour
         }
         
     }
+
+    public void OnCollisionEnter(Collision collision)
+    {
+
+        if (collision.transform.tag != "indestrutivel")
+        {
+            if(collision.transform.tag == "Obstaculo")
+            {
+                if (qtdVidas > 0)
+                {
+                    qtdVidas = Menu.qtdVida - 1;
+                }
+                else
+                {
+                    Destroy(collision.transform.gameObject);
+                    Destroy(gameObject);
+                }
+            }
+        }
+
+        if (collision.transform.tag == "Vida") {
+            qtdVidas = Menu.qtdVida + 1;
+            Destroy(collision.transform.gameObject);
+        }
+    }
+
 
 
 

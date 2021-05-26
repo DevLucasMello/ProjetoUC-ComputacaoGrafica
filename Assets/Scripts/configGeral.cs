@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class configGeral : MonoBehaviour
@@ -9,10 +10,12 @@ public class configGeral : MonoBehaviour
     static public bool estaPausado;
     Menu menuInicial;
     static public float tempoRestante;
+
+  
+    
     // Start is called before the first frame update
     void Start()
     {
-        
         menu = Instantiate(menu, menu.transform.position, menu.transform.rotation) as GameObject;
         tempoRestante = 30;
         menuInicial = menu.GetComponent<Menu>();
@@ -20,14 +23,15 @@ public class configGeral : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
+    void Update() {
+        
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Pause(!estaPausado);
         }
 
         tempoRestante -= Time.deltaTime;
+        //if (tempoRestante<=0 || PlayerController.qtdVidas<0)
         if (tempoRestante<=0)
         {
             tempoRestante = 0;
@@ -54,8 +58,6 @@ public class configGeral : MonoBehaviour
 
 
     }
-    
-
 
 
 }

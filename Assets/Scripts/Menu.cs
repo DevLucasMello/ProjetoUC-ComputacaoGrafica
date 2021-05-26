@@ -9,13 +9,13 @@ public class Menu : MonoBehaviour{
     public Text cronometro;
     public GameObject[] BotoesMenu;
 
-    public int qtdVida = 10;
+    public static int qtdVida;
     public Slider vidaSlider;
 
     // Start is called before the first frame update
     void Start()
     {
-        vidaSlider.value = qtdVida;
+        
 
     }
 
@@ -28,7 +28,7 @@ public class Menu : MonoBehaviour{
     // Update is called once per frame
     void Update()
     {
-        
+        vidaSlider.value = qtdVida;
     }
     public void chamaCena() {
         UnityEngine.SceneManagement.SceneManager.LoadScene("Corrida");
@@ -38,6 +38,7 @@ public class Menu : MonoBehaviour{
     {
         Application.Quit();
     }
+    
     public void AtivarMenus(bool ativar) {
 
         for (int i = 0; i < BotoesMenu.Length; i++)
@@ -49,13 +50,14 @@ public class Menu : MonoBehaviour{
 
     }
 
-    public void Dano()
+    
+    public static void Dano()
     {
-        vidaSlider.value -= 3;
+        qtdVida -= 3;
     }
-
-    public void Vida() {
-        vidaSlider.value += 3;
+    //Apagar
+    public static void Vida() {
+        qtdVida += 3;
     }
 
     //public VidaController vida
