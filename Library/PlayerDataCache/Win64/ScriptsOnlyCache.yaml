@@ -5,6 +5,7 @@ ScriptsOnlyBuild:
     - Obstacle
     - PlayerController
     - Vidas
+    - configGeral
     Cinemachine.dll:
     - Cinemachine.CinemachineBrain
     - Cinemachine.CinemachineComposer
@@ -13,6 +14,8 @@ ScriptsOnlyBuild:
     - Cinemachine.CinemachineVirtualCamera
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    Unity.Timeline.Editor.dll:
+    - TimelineProjectSettings
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -24,6 +27,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
   sceneClasses:
     Assets/Scenes/Corrida.unity:
@@ -60,26 +64,56 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 2792}
+      Script: {instanceID: 1620}
     - Class: 114
-      Script: {instanceID: 2954}
+      Script: {instanceID: 1622}
     - Class: 114
-      Script: {instanceID: 5496}
+      Script: {instanceID: 2860}
     - Class: 114
-      Script: {instanceID: 5850}
+      Script: {instanceID: 2934}
     - Class: 114
-      Script: {instanceID: 6644}
+      Script: {instanceID: 3022}
     - Class: 114
-      Script: {instanceID: 8162}
+      Script: {instanceID: 3178}
     - Class: 114
-      Script: {instanceID: 8314}
+      Script: {instanceID: 3552}
     - Class: 114
-      Script: {instanceID: 52412}
+      Script: {instanceID: 4482}
+    - Class: 114
+      Script: {instanceID: 5566}
+    - Class: 114
+      Script: {instanceID: 5920}
+    - Class: 114
+      Script: {instanceID: 5932}
+    - Class: 114
+      Script: {instanceID: 6350}
+    - Class: 114
+      Script: {instanceID: 6714}
+    - Class: 114
+      Script: {instanceID: 6764}
+    - Class: 114
+      Script: {instanceID: 7808}
+    - Class: 114
+      Script: {instanceID: 8232}
+    - Class: 114
+      Script: {instanceID: 8384}
+    - Class: 114
+      Script: {instanceID: 8422}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     - Class: 258
       Script: {instanceID: 0}
@@ -102,28 +136,28 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
-    - Class: 89
-      Script: {instanceID: 0}
     - Class: 104
-      Script: {instanceID: 0}
-    - Class: 108
       Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 1620}
     - Class: 114
-      Script: {instanceID: 2866}
+      Script: {instanceID: 1622}
     - Class: 114
-      Script: {instanceID: 3110}
+      Script: {instanceID: 2934}
     - Class: 114
-      Script: {instanceID: 3484}
+      Script: {instanceID: 3178}
     - Class: 114
-      Script: {instanceID: 6280}
+      Script: {instanceID: 3552}
     - Class: 114
-      Script: {instanceID: 6694}
+      Script: {instanceID: 4482}
     - Class: 114
-      Script: {instanceID: 7300}
+      Script: {instanceID: 5932}
     - Class: 114
-      Script: {instanceID: 109648}
+      Script: {instanceID: 6350}
+    - Class: 114
+      Script: {instanceID: 6764}
+    - Class: 114
+      Script: {instanceID: 8422}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -147,6 +181,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Image
+  - hash:
+      serializedVersion: 2
+      Hash: 748dd2a2a28da4e618912da5ac45684b
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: StandaloneInputModule
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -683,6 +723,12 @@ ScriptsOnlyBuild:
     className: UnityOnPointerExitMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 6321cec208821d603a83be915ec70871
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Menu
+  - hash:
+      serializedVersion: 2
       Hash: aba7b2852ef61d175dd9602e7723d5e5
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -1007,7 +1053,7 @@ ScriptsOnlyBuild:
     className: Toggle
   - hash:
       serializedVersion: 2
-      Hash: e86085286413000478e5363f60e011bf
+      Hash: 978d2eac91fcf396f71dc85d6d76c3fe
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Obstacle
@@ -1229,12 +1275,6 @@ ScriptsOnlyBuild:
     className: CameraMagnetProperty
   - hash:
       serializedVersion: 2
-      Hash: 748dd2a2a28da4e618912da5ac45684b
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.EventSystems
-    className: StandaloneInputModule
-  - hash:
-      serializedVersion: 2
       Hash: f7858108331b563fb41b80b729297acd
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -1299,6 +1339,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnDragMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 48cfbf3da5163955c605dfa651538950
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Vidas
   - hash:
       serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
@@ -1431,6 +1477,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController
+  - hash:
+      serializedVersion: 2
+      Hash: 35ec97400fd57993e189a9a878318af3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: configGeral
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -1635,20 +1687,8 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: ef21d7f5c3be63f9178f338beee4ef0d
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Vidas
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Menu
   platform: 19
   scenePathNames:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/Corrida.unity
-  playerPath: C:/Users/igorg/fc/ProjetoUC-ComputacaoGrafica/Executavel/jogo.exe
+  playerPath: C:/Users/Lucas/Desktop/jogo/jogo.exe
