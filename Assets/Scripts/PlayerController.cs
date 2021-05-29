@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
     public int qtdVidas;
     void Start()
     {
-        qtdVidas = 10;
+        qtdVidas = 12;
     }
     // Update is called once per frame
     void Update()
@@ -33,11 +33,16 @@ public class PlayerController : MonoBehaviour
         }
 
 
-        if (Input.GetKey(KeyCode.LeftControl))
+        if (Input.GetKeyDown(KeyCode.LeftControl))
         {
             Time.timeScale = 0.4f;
         }
-        
+
+        if (Input.GetKeyUp(KeyCode.LeftControl))
+        {
+            Time.timeScale = 1.0f;
+        }
+
     }
 
     public void OnCollisionEnter(Collision collision)
@@ -49,7 +54,7 @@ public class PlayerController : MonoBehaviour
             {
                 if (qtdVidas > 0)
                 {
-                    qtdVidas = Menu.qtdVida - 1;
+                    qtdVidas = Menu.qtdVida - 3;
                 }
                 else
                 {
@@ -60,7 +65,7 @@ public class PlayerController : MonoBehaviour
         }
 
         if (collision.transform.tag == "Vida") {
-            qtdVidas = Menu.qtdVida + 1;
+            qtdVidas = Menu.qtdVida + 3;
             Destroy(collision.transform.gameObject);
         }
     }
