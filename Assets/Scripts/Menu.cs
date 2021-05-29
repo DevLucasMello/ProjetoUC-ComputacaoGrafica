@@ -8,6 +8,9 @@ public class Menu : MonoBehaviour{
 
     public Text cronometro;
     public GameObject[] BotoesMenu;
+    public GameObject[] gameOver;
+    public GameObject[] Vencer;
+    
 
     public static int qtdVida;
     public Slider vidaSlider;
@@ -45,23 +48,28 @@ public class Menu : MonoBehaviour{
         {
             BotoesMenu[i].SetActive(ativar);
         }
-            
-
-
     }
 
-    
-    public static void Dano()
+
+    public void GameOver(bool ativa)
     {
-        qtdVida -= 3;
-    }
-    //Apagar
-    public static void Vida() {
-        qtdVida += 3;
+
+        for (int i = 0; i < gameOver.Length; i++)
+        {
+            gameOver[i].SetActive(ativa);
+        }
     }
 
-    //public VidaController vida
-    //vida.Dano();
+
+    public void vencer(bool ativ)
+    {
+
+        for (int i = 0; i < Vencer.Length; i++)
+        {
+            Vencer[i].SetActive(ativ);
+        }
+    }
+
 
 
 }

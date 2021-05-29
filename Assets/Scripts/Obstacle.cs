@@ -81,28 +81,6 @@ public class Obstacle : MonoBehaviour
         }
     }
 
-    /*
-    public void OnCollisionEnter(Collision collision)
-    {
 
-        if (collision.transform.tag != "indestrutivel"){
-
-            PlayerController carro = collision.transform.GetComponent<PlayerController>();
-            
-            if (carro.qtdVidas > 0)
-            {
-                
-                carro.qtdVidas--;
-                
-            }
-            else
-            {
-                Destroy(collision.transform.gameObject);
-                Destroy(gameObject);
-            }
-
-        }
-    }
-    */
 }
 

@@ -9,15 +9,14 @@ public class PlayerController : MonoBehaviour
 
     private float verticalInput;
     private float horizontalInput;
-
-
-
-    //public GameObject vidas;
-    //static public int qtdVidas;
     public int qtdVidas;
+
+    static public bool venceu;
+
     void Start()
     {
         qtdVidas = 10;
+        venceu = false;
     }
     // Update is called once per frame
     void Update()
@@ -33,23 +32,31 @@ public class PlayerController : MonoBehaviour
         }
 
 
-        if (Input.GetKey(KeyCode.LeftControl))
+        if (Input.GetKeyDown(KeyCode.LeftControl))
         {
             Time.timeScale = 0.4f;
         }
-        
+
+        if (Input.GetKeyUp(KeyCode.LeftControl))
+        {
+            Time.timeScale = 1.0f;
+        }
+
     }
+
+    
 
     public void OnCollisionEnter(Collision collision)
     {
 
         if (collision.transform.tag != "indestrutivel")
         {
-            if(collision.transform.tag == "Obstaculo")
+            if (collision.transform.tag == "Obstaculo")
             {
-                if (qtdVidas > 0)
+                if (qtdVidas >= 0)
                 {
                     qtdVidas = Menu.qtdVida - 1;
+
                 }
                 else
                 {
@@ -59,13 +66,24 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        if (collision.transform.tag == "Vida") {
-            qtdVidas = Menu.qtdVida + 1;
-            Destroy(collision.transform.gameObject);
+        if (collision.transform.tag == "Vida")
+        {
+            if (qtdVidas < 10)
+            {
+                qtdVidas = Menu.qtdVida + 1;
+                Destroy(collision.transform.gameObject);
+            }
+            else {
+
+                Destroy(collision.transform.gameObject);
+            }
+        }
+
+        if (collision.transform.tag == "Final")
+        {
+            venceu = true;
         }
     }
-
-
 
 
 }

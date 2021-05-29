@@ -31,12 +31,17 @@ public class configGeral : MonoBehaviour
         }
 
         tempoRestante -= Time.deltaTime;
-        //if (tempoRestante<=0 || PlayerController.qtdVidas<0)
-        if (tempoRestante<=0)
+       
+        if (tempoRestante<=0 || Menu.qtdVida<= 0)
         {
             tempoRestante = 0;
-            Pause(true);
+            GameOver(true);
 
+        }
+
+        if (PlayerController.venceu == true)
+        {
+            Vencer(true);
         }
         menuInicial.AtualizaCronometro((int)Mathf.Round(tempoRestante));
         
@@ -55,9 +60,36 @@ public class configGeral : MonoBehaviour
         {
             Time.timeScale = 1;
         }
-
-
     }
 
+    void GameOver(bool statusPause)
+    {
+        estaPausado = statusPause;
+        menuInicial.GameOver(estaPausado);
+
+        if (estaPausado)
+        {
+            Time.timeScale = 0;
+        }
+        else
+        {
+            Time.timeScale = 1;
+        }
+    }
+
+    void Vencer(bool statusPause)
+    {
+        estaPausado = statusPause;
+        menuInicial.vencer(estaPausado);
+
+        if (estaPausado)
+        {
+            Time.timeScale = 0;
+        }
+        else
+        {
+            Time.timeScale = 1;
+        }
+    }
 
 }

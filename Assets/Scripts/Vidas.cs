@@ -21,17 +21,5 @@ public class Vidas : MonoBehaviour
         transform.Rotate(0, rotacao * Time.deltaTime, 0);
    
     }
-    /*
-    public void OnCollisionEnter(Collision collision) {
-
-        PlayerController carro = collision.transform.GetComponent<PlayerController>();
-
-        if (collision.transform.tag != "indestrutivel") {
-            if (collision.transform.tag == "Player") {
-                Destroy(gameObject);
-                carro.qtdVidas += Recarregavidas;
-            }
-        }
-    }
-    */
+   
 }
