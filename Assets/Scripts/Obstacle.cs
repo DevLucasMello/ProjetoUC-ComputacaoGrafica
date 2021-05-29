@@ -14,6 +14,8 @@ public class Obstacle : MonoBehaviour
 
     int localAtual = 0;
     bool inverter = false;
+    
+   
 
     // Start is called before the first frame update
     void Start()
@@ -78,4 +80,29 @@ public class Obstacle : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, locais[localAtual].transform.position, velocidade * Time.deltaTime);
         }
     }
+
+    /*
+    public void OnCollisionEnter(Collision collision)
+    {
+
+        if (collision.transform.tag != "indestrutivel"){
+
+            PlayerController carro = collision.transform.GetComponent<PlayerController>();
+            
+            if (carro.qtdVidas > 0)
+            {
+                
+                carro.qtdVidas--;
+                
+            }
+            else
+            {
+                Destroy(collision.transform.gameObject);
+                Destroy(gameObject);
+            }
+
+        }
+    }
+    */
 }
+
